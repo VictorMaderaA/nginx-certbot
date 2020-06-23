@@ -11,3 +11,8 @@ services:
       - 443:443
     volumes:
       - ./conf.d:/etc/nginx/user.conf.d:ro
+
+networks:
+  default:
+    external:
+      name: server_network
